@@ -1,0 +1,119 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: '華康儷中黑';
+    background-color: #f314ce;
+    transform: scale(0.9);
+}
+
+.wrapper{
+    width: 33.75em;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 1em 2em;
+    transform: translateX(-50%) ;
+    left: 50%;
+    top: 0.5em;
+    border-radius: 0.5em;
+    .container{
+        margin: 1em auto;
+        width: 33.75em;
+        border-radius: 0.6em;
+        overflow: hidden;
+      
+    }
+    #information{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .player-wrappers{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+    #playerturn{
+        margin: 1em 0;
+        text-align: right;
+        span{
+            font-weight: 600;
+        }
+    }
+}
+
+.startscreen{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #f314ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(1.1);
+    #message{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    button{
+      background: #d22b2b;
+      font-size: 1.4em;
+      padding: 1em 1.5em;
+      border: none;
+      outline: none;
+      border-radius: 2em;
+      cursor: pointer;
+    }
+}
+
+.player1:before{
+    content: "";
+    display: inline-block;
+    width: 3.12em;
+    height: 3.12em;
+    border-radius: 50%;
+    background: radial-gradient(#fff04e 1.12em , #ffc400 1.25em);
+ }
+ .player2:before{
+    content: "";
+    display: inline-block;
+    width: 3.12em;
+    height: 3.12em;
+    border-radius: 50%;
+    background: radial-gradient(#ff4747 1.12em , #c00303 1.25em);
+ }
+
+.grid-row{
+    margin: 0 auto;
+    display: flex;
+}
+
+.grid-box{
+    
+    width: 5em;
+    height: 5em;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(white 1.37em , #416cea 1.43em);
+    cursor: pointer;
+   margin: -0.1em;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
